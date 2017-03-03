@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BootStrap Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="bootstrap.min.css"></script>
+    <!--sometimes properties are not overridden for that add important-->
+    <style>
+        .overridden-container{
+        padding-left:100px!important;
+        padding-right:100px!important;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Heading</h1>
+<div class="container alert-info">
+
+    Knoldus is a team of Passionate Technologists, focused on staying at the edge of the curve.
+    We love to build Scalable, Performant, Concurrent systems with Functional Programming to meet
+    the needs of the business.</div>
+<br><br><br>
+<div class="container-fluid overridden-container alert-danger">
+
+    Knoldus is a team of Passionate Technologists, focused on staying at the edge of the curve.
+    We love to build Scalable, Performant, Concurrent systems with Functional Programming to meet
+    the needs of the business.
+</div>
+<br><br><br>
+
+<table class="table table-bordered">
+    <tr class="active">
+        <td>
+            <small>A (active small)</small>
+        </td>
+        <td>
+            <del>B (active del)</del>
+        </td>
+    </tr>
+    <tr class="info">
+        <td>
+            <mark>C (info mark)</mark>
+        </td>
+        <td class="danger">
+            <s>D (danger overrides info striked through)</s>
+        </td>
+    </tr>
+    <tr>
+        <td class="danger">
+            <u>E (danger underline)</u>
+        </td>
+        <td>
+            F (no class)
+        </td>
+    </tr>
+</table>
+<br><br><br>
+<!--checkbox-inline??-->
+<div >
+    <!-- data-toggle="tooltip" title="hovering on me?" ,, added tooltip-->
+    <input type="checkbox"  data-toggle="tooltip" title="hovering on me?" id="a">First</input>
+    <input type="checkbox" id="b">Second</input>
+</div>
+<br><br><br>
+
+<form>
+
+    <div class="form-group">
+        <label foremail>Email</label>
+        <input type="email" class="form-control" id = "email" placeholder="email">
+    </div>
+</form>
+
+<!--Inline form??? -->
+<!--horizontal form-->
+<br><br><br>
+<script> $(document).ready(function(){
+$('[data-toggle="tooltip"]').tooltip();
+$('[data-toggle="popover"]').popover();
+});
+</script>
+<form>
+
+    <div class="form-horizontal">
+        <!-- data-toggle="popover" title="hovering on me?" ,, added tooltip-->
+        <label for="email"class="col-sm-2 control-lable">Email</label>
+        <input type="email" data-toggle="popover"  title="E-mail"  class=form-control" placeholder="Email">
+    </div>
+</form>
+<br><br><br>
+<div class="row">
+  <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">stuff1</div>
+  <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 col-xs-offset=1">stuff2</div>
+
+</div>
+</body>
+</html>

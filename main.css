@@ -1,0 +1,59 @@
+.success{
+  background-color: #ecf0f1;
+
+}
+.contentbody *{
+  background-color: #ffffff;
+}
+.cover{
+
+}
+
+.row.content {
+    height: 550px
+}
+
+.sidenav {
+
+    height: 100%;
+}
+.img-circle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+    height: 50%;
+    width: auto;
+}
+
+.user-name{
+  text-align: center;
+}
+
+.innerdiv{
+padding:50px
+}
+
+.innerrow{
+  margin-bottom: 25px
+}
+
+.innerimage{
+  width:100%
+}
+.innerparagraph{
+border: 1px solid;
+margin:10px 0px;
+padding:10px;
+border-radius: 5%
+}
+
+.bgimg {
+    background-image: url("forest.jpg");
+    height: 60%;
+    width: 75%;
+}
+
+.vertical-center {
+  padding: 10%;
+  color: #f1c40f;
+  font-style: italic;
+}

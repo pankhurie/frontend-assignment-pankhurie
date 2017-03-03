@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JQuery Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <style>
+        .t11 {
+            color: red;
+        }
+
+        .t22 {
+            color: green;
+        }
+
+        .magicdiv {
+            width: 100;
+            border: solid 2px;
+        }
+    </style>
+</head>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        // alert("Hey! Happy Chocolate Day! 🍫");
+        // $('["href"]')
+        // alert("Value in the first text box: "+$('#t1').val())
+
+        //Events::
+        // $('.magicdiv').on({
+        //   mouseenter:function(){
+        //     $(this).css("background-color","lightgray");
+        //   },
+        //   mouseleave:function(){
+        //     $(this).css("background-color","white");
+        //   },
+        //   click:function(){
+        //     $(this).css("background-color","yellow");
+        //   },
+        //   dblclick:function(){
+        //     $(this).css("background-color","blue");
+        //   }
+        // });
+        //
+        // $('#b1').click(function() {
+        //   var toshow = $('#t1').val();
+        //   alert("Value in the first text box: " + toshow);
+        // });
+        // $('#b2').click(function() {
+        //   var toshow = $('#t2').val();
+        //   alert("Value in the second text box: " + toshow);
+        // });
+        // $('#b3').click(function() {
+        //   var toshow = $('#t3').val();
+        //   alert("Value in the third text box: " + toshow);
+        // });
+        // $('#b4').click(function() {
+        //   var toshow = $('#t4').val();
+        //   alert("Value in the fourth text box: " + toshow);
+        // });
+        // $('#b5').click(function() {
+        //   var toshow = $('#t5').val();
+        //   alert("Value in the fifth text box: " + toshow);
+        // });
+
+        //hide show toggle etc
+        // $('#b1').click(function() {
+        //     $('.magicdiv').hide();
+        // });
+        // $('#b2').click(function() {
+        //     // $('.magicdiv').show();
+        //     $('.magicdiv').css("color","red")
+        //     // .slideUp("slow")
+        //     .slideDown("medium");
+        // });
+        // $('#b3').click(function() {
+        //     $('.magicdiv').toggle();
+        // });
+        // $('#b4').click(function() {
+        //     $('.magicdiv').animate({
+        //         margin: '250px'
+        //     });
+        // });
+        // $('#b5').click(function() {
+        //     // $('.magicdiv').fadeIn();
+        //     $('.magicdiv').css("color","red")
+        //     .slideUp("slow")
+        //     .slideDown("medium")
+        //     .slideUp("slow")
+        //     .slideDown("fast");
+        //
+        // });
+        // $('#b6').click(function() {
+        //     $('.magicdiv').fadeOut();
+        //
+        // });
+
+        //Callback functions
+        //syntax: $(selector).hide(speed,callback);
+        // $('#b1').click(function(){
+        //   $('.magicdiv').slideUp("slow",function(){
+        //     console.log("Do you miss magic?");
+        //   })
+        //   .slideDown("slow",function(){
+        //     console.log("Magic is back!");
+        //   });
+        // });
+
+        //DOM Manipulation
+        //e.g.: alert href of anchor tag
+        // $('#b1').click(function(){
+        //   alert($('#googleid').attr("href"));
+        // });
+
+        //Logging
+        // $('#b1').click(function(){
+        //   console.log($('#googleid').attr("href"));
+        // });
+
+        //DOM contd
+        //add
+        //append-end of selected el inside the el
+
+        //prepend-before selected el inside the el
+
+        //after- outside the el
+
+        //before- inside the el
+        // $('.magicdiv')
+        // .append('<p id="app">Append</p>')
+        // .prepend('<p id="pre">Prepend</p>')
+        // .after('<p id="aft">After</p>')
+        // .before('<p id="bef">Before</p>');
+
+        //REMOVE
+        // $('#b1').click(function(){
+        //   $('.magicdiv').remove("#app, #pre");
+        //   // console.log($('.magicdiv').empty());
+        // });
+        //
+        // $('#b2').click(function(){
+        //   $('.magicdiv').empty();
+        // });
+        //
+        // $('#b3').click(function(){
+        //   $('.magicdiv')
+        //   .append('<p id="app">Append</p>')
+        //   .prepend('<p id="pre">Prepend</p>')
+        //   .after('<p id="aft">After</p>')
+        //   .before('<p id="bef">Before</p>');
+        // });
+
+        // addclass
+        // removeclass
+        // toggleclass
+        //css
+
+        //JQuery Traversing -> DOM structure is followed
+
+        //Ajax methods
+        //get
+        //post
+
+
+    });
+
+
+    //     $("p").click(function(){
+    //     alert("The paragraph was clicked.");
+    // });
+
+    // $(function(){
+    //   alert("Hey! Happy Chocolate Day! 🍫");
+    // })
+</script>
+
+
+<body>
+    <div class="container-fluid">
+        <br><br>
+        <input class="t11" type="text" id="t1" value="This!"><input class="t11" type="button" id="b1" value="hide"><br><br>
+        <input class="t11" type="text" id="t2"><input class="t11" type="button" id="b2" value="Show"><br><br>
+        <input class="t11" type="text" id="t3"><input class="t11" type="button" id="b3" value="Toggle"><br><br>
+        <input class="t11" type="text" id="t4"><input class="t11" type="button" id="b4" value="Animate"><br><br>
+        <input class="t11" type="text" id="t5"><input class="t11" type="button" id="b5" value="Custom Effect 1"><br><br>
+        <input class="t11" type="text" id="t6"><input class="t11" type="button" id="b6" value="Custom Effect 2"><br><br>
+
+        <div class="magicdiv">
+            <h1>Magic text!</h1></div><br>
+        <a id="googleid" href="https://www.google.com">Google</a><br><br>
+        <a href="https://www.facebook.com">Facebook</a><br><br>
+        <a href="https://www.youtube.com">Youtube</a><br><br>
+        <a id="your">Your Website</a><br><br>
+        <!-- dynamically give href as https://github.com/pankhurie -->
+
+    </div>
+
+    <!-- Console outputs
+$('.t11')
+Object { 0: <input#t1.t11>, 1: <input#b1.t11>, 2: <input#t2.t11>, 3: <input#b2.t11>, 4: <input#t3.t11>, 5: <input#b3.t11>, 6: <input#t4.t11>, 7: <input#b4.t11>, length: 8, prevObject: Object[1] }
+$('input.t11')
+Object { 0: <input#t1.t11>, 1: <input#b1.t11>, 2: <input#t2.t11>, 3: <input#b2.t11>, 4: <input#t3.t11>, 5: <input#b3.t11>, 6: <input#t4.t11>, 7: <input#b4.t11>, length: 8, prevObject: Object[1] }
+$('input[type="text"].t11')
+Object { 0: <input#t1.t11>, 1: <input#t2.t11>, 2: <input#t3.t11>, 3: <input#t4.t11>, length: 4, prevObject: Object[1] }
+$('input#t1')
+Object { 0: <input#t1.t11>, length: 1, prevObject: Object[1] }
+
+Attribute based selectors
+
+$('[href]')
+Object { 0: <link>, 1: <a>, 2: <a>, 3: <a>, length: 4, prevObject: Object[1] }
+
+Ques: Single quotes, Double quotes
+$('input[type="text"]')
+Object { 0: <input#t1.t11>, 1: <input#t2.t11>, 2: <input#t3.t11>, 3: <input#t4.t11>, length: 4, prevObject: Object[1] }
+$("input[type="text"]")
+SyntaxError: missing ) after argument list
+
+Adding/removing class of element dynamically
+
+var c = $('#t5');
+undefined
+c.removeClass('t11');
+Object [ <input#t5> ]
+c.addC
+undefined
+c.addClass('t22');
+Object [ <input#t5.t22> ]
+
+Working with attributes
+
+var attribute = $('selector').attr('attribute-name');
+
+$('selector').attr('attribute-name','new-value');
+e.g.: $('#t5').val($('#t1').val());
+
+$('body').html('<div>Some content</div>');
+
+$('a').html('Links');
+
+
+Event handlers
+click
+dbclick
+mouseenter
+mouseleave
+
+
+-->
+
+
+</body>
+
+</html>
